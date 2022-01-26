@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KI W21 on </title>
+    <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/</link>
+    <description>Recent content in KI W21 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language><atom:link href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blatt 01: Problemlösen, Suche</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet01/</guid>
+      <description>A1.1: Möglichkeiten und Grenzen der KI (1P) Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz gelöst werden können und welche aktuell noch ungelöst sind.
+Thema: Gefühl für bereits realisierbare Aufgaben
+A1.2: Auswirkungen der KI (1P) Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa durch autonomes Fahren.
+Thema: Chancen und Risiken, Ethik
+A1.3: Problemformalisierung, Zustandsraum (2P) Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen überqueren.</description>
+    </item>
+    
+    <item>
+      <title>Einführung Constraints</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/</guid>
+      <description>Motivation: Einfärben von Landkarten   Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende Länder müssen unterschiedliche Farben bekommen (=&amp;gt; Constraint).
+Einfärben von Landkarten: Formalisierung   Variablen: A, B, C, D, E, F
+  Werte: $\lbrace red, green, blue \rbrace$
+  Constraints: Benachbarte Regionen müssen unterschiedliche Farben haben</description>
+    </item>
+    
+    <item>
+      <title>Einführung Evolutionäre Algorithmen</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/</guid>
+      <description>Evolution sehr erfolgreich bei Anpassung  Quelle: Photo by Johannes Plenio on Unsplash (Unsplash License)
+ Wie funktioniert&#39;s?
+ kurze Diskussion 
+EA -- Zutaten und Mechanismen   Zutaten:
+ Individuen: Kodierung möglicher Lösungen Population von Individuen Fitnessfunktion: Bewertung der Angepasstheit    Mechanismen (&amp;quot;Operatoren&amp;quot;):
+ Selektion Rekombination (Crossover) Mutation    EA -- Allgemeiner Ablauf   EA -- Beispiel   Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung aller Königinnen =&amp;gt; Vollständige Zustandsbeschreibung.</description>
+    </item>
+    
+    <item>
+      <title>Einführung Optimale Spiele</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/</guid>
+      <description>Backgammon: Zwei Spieler, was ist der beste Zug?  Quelle: &amp;quot;position-backgammon-decembre&amp;quot; by serialgamer_fr, licensed under CC BY 2.0
+ Zwei Spieler, ein Spielstand und ein Würfelergebnis: Was ist jetzt der beste Zug?!
+Motivation: Unterschied zu Suche?!   =&amp;gt; Mehrere konkurrierende Agenten an Suche beteiligt!
+=&amp;gt; (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
+Spiele und Umgebungen     Deterministisch Zufallskomponente     Voll beobachtbar Schach, Go, ... Backgammon, Monopoly   Partiell beobachtbar Schiffe-versenken Bridge, Poker, Skat, .</description>
+    </item>
+    
+    <item>
+      <title>Intro: Was ist Künstliche Intelligenz?</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/</guid>
+      <description>Was ist (künstliche) Intelligenz?  Quelle: AvB - RoboCup 2013 - Eindhoven, by RoboCup2013, licensed under CC BY 2.0
+ Was ist (künstliche) Intelligenz? Ist Commander Data intelligent? Woran erkennen Sie das?  Diskussion 
+Definition Intelligenz  Intelligenz (von lat. intellegere &amp;quot;verstehen&amp;quot;, wörtlich &amp;quot;wählen zwischen ...&amp;quot; von lat. inter &amp;quot;zwischen&amp;quot; und legere &amp;quot;lesen, wählen&amp;quot;) ist in der Psychologie ein Sammelbegriff für die kognitive Leistungsfähigkeit des Menschen. Da einzelne kognitive Fähigkeiten unterschiedlich stark ausgeprägt sein können und keine Einigkeit besteht, wie diese zu bestimmen und zu unterscheiden sind, gibt es keine allgemeingültige Definition der Intelligenz.</description>
+    </item>
+    
+    <item>
+      <title>Lokale Suche: Gradientensuche</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/</guid>
+      <description>Unterschiede in den Suchproblemen?      Bisher betrachtete Suchverfahren:
+ Systematische Erkundung des Suchraums Weg zur Lösung wichtig  =&amp;gt; Oft aber nur das Ziel an sich interessant! (Und nicht, wie man dort hin gelangt.)
+Beispiel: Stundenplan
+Analogie: Bergsteigen ohne Karte und Pfade   Gradienten-Suche: &amp;quot;Gehe in Richtung des steilsten Anstiegs der Zielfunktion.&amp;quot;
+=&amp;gt; Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)
+ Verschiedene Namen: &amp;quot;Hill-climbing&amp;quot;, &amp;quot;Greedy local search&amp;quot; Kann auch als Minimierung angewendet werden  Pseudoalgorithmus Gradientensuche &amp;quot;Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning 101</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/</guid>
+      <description>Was ist Lernen?  Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch Erfahrung.
+ Warum Lernen?  Nicht alle Situationen vorhersehbar Nicht alle Details modellierbar Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar Data Mining: Entdeckung neuen Wissens durch Analyse der Daten Selbstanpassende Programme  =&amp;gt; Lernen wichtige Eigenschaft lebender Wesen :-)
+Learning Agent   Feedback während des Lernens   Überwachtes Lernen
+ Lernen durch Beobachtung Vorgabe von Beispielen: Ein- und Ausgabewerte  =&amp;gt; Regression, Klassifikation</description>
+    </item>
+    
+    <item>
+      <title>NN1 - Das Perzeptron</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/</guid>
+      <description>Kurze Übersicht Definition &amp;quot;Maschinelles Lernen&amp;quot; Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959)
+Arten des Lernens  Überwachtes Lernen (e.g. Klassifizierung, Regression) Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion) Bestärkendes Lernen (e.g. Schach spielen)  Formalisierung  Zielfunktion $f$ Merkmalraum (input space) Ausgaberaum (output space) Datensatz $ $ Hypothesenmenge $ $ Lernalgorithmus $ $  Das Perzeptron Ein einfaches Modell für die binäre Klassifizierung
+ Bilde gewichtete Summe (Linearkombination) der Merkmale Vergleiche das Ergebnis mit einem Schwellenwert  Positiv, falls über dem Schwellenwert Negativ, falls unter dem Schwellenwert   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt &amp;gt; siehe Perzeptron Lernalgorithmus  </description>
+    </item>
+    
+    <item>
+      <title>Suche mit Branch-and-Bound</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/</guid>
+      <description>Hole das Buch   =&amp;gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) + h(n)$
+ $n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&amp;gt; $h(n)$ wird auch &amp;quot;heuristische Funktion&amp;quot; oder &amp;quot;Heuristik&amp;quot; genannt  Varianten:
+ Branch-and-Bound Best First A*  Branch-and-Bound (BnB) Variante der Breitensuche mit Kosten</description>
+    </item>
+    
+    <item>
+      <title>Suche mit Tiefensuche</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/</guid>
+      <description>Hole das Buch   Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek und einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für den Roboter lautet: Hole das Buch aus der Bibliothek (und bringe es zum Kopier). (Damit das Beispiel und der sich daraus ergebende Problemgraph nicht zu groß und zu unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch in der Bibliothek aufnimmt.</description>
+    </item>
+    
+    <item>
+      <title>Wiederholung Wahrscheinlichkeitstheorie</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/</guid>
+      <description>Ereignisse und Wahrscheinlichkeit Hinweis: Die folgende Darstellung zur Einführung in die Wahrscheinlichkeitstheorie dient dem Verständnis des Naive Bayes Klassifikationsalgorithmus und ist teilweise eher oberflächlich gehalten. Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
+Ereignisse   Ereignisse $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$: endliche Menge der Ausgänge eines Zufallsexperiments
+  Elementarereignis: Die $\omega_i \in \Omega$
+ decken alle möglichen Versuchsergebnisse ab, und schließen sich gegenseitig aus    Regeln  Wenn $A$ und $B$ Ereignisse sind, dann auch $A \cup B$ $\Omega$ wird als sicheres Ereignis bezeichnet: Enthält definitionsgemäß alle Versuchsausgänge, d.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 02: Lokale Suche, GA</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet02/</guid>
+      <description>A2.1: Modellierung von GA (2P) Folgende Probleme sollen mit einem GA gelöst werden:
+  das Travelling Salesman Problem für 10 Städte, d.h. das Finden der kürzesten Route zwischen 10 Städten,
+  ein $9 \times 9$-Sudoku-Rätsel,
+  das $n$-Queens-Problem (für ein beliebiges, aber festes $n$).
+  Geben Sie für diese Probleme jeweils eine geeignete Kodierung der Individuen, passende Operatoren (Crossover, Mutation) und eine geeignete Fitnessfunktion an, damit das Problem mit einem GA gelöst werden kann.</description>
+    </item>
+    
+    <item>
+      <title>CAL2</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/</guid>
+      <description>Entscheidungsbäume: Klassifikation    Attribute als Knoten im Baum Ausprägungen als Test (Ausgang, Verzweigung) Klasse (Funktionswert) als Blatt  Erinnern Sie sich an das Beispiel mit der Auto-Reparatur aus der letzten Sitzung.
+Die relevanten Eigenschaften (Merkmale) eines Autos würden als Knoten im Baum repräsentiert. Beispiel: &amp;quot;Motor startet&amp;quot; oder &amp;quot;Farbe&amp;quot;.
+Jedes Merkmal hat eine Anzahl von möglichen Ausprägungen, diese entsprechen den Verzweigungen am Knoten. Beispiel: &amp;quot;startet&amp;quot;, &amp;quot;startet nicht&amp;quot; oder &amp;quot;rot&amp;quot;, &amp;quot;weiß&amp;quot;, &amp;quot;silber&amp;quot;, .</description>
+    </item>
+    
+    <item>
+      <title>Klassifikation mit Naive Bayes</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/</guid>
+      <description>Medizinische Diagnostik mit NB  Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet: $P(S|A) = 0.8$ Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$ Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$  =&amp;gt; Ich habe ein steifes Gelenk. Habe ich Arthrose?
+Textklassifikation mit NB   Mails, manuell markiert:
+ D1: (&amp;quot;Sieben Zwerge fraßen sieben Ziegen&amp;quot;, OK) D2: (&amp;quot;Sieben Ziegen traten sieben Wölfe&amp;quot;, SPAM) D3: (&amp;quot;Sieben Wölfe fraßen sieben Böcke&amp;quot;, OK) D4: (&amp;quot;Sieben Böcke traten sieben Zwerge&amp;quot;, SPAM)    Neue Mails:</description>
+    </item>
+    
+    <item>
+      <title>Lokale Suche: Simulated Annealing</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/</guid>
+      <description>Motivation   Problem: lokale Maxima und Plateaus
+ Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren  Mögliche Lösungen:
+ Neustart des Algorithmus, wenn kein Fortschritt erzielt wird Rauschen &amp;quot;injizieren&amp;quot;  Gedankenexperiment: Ausweg aus lokalen Minima  &amp;quot;Drehen der Landschaft&amp;quot;: Minimieren statt Maximieren Ball wird in Zustandsraum-Landschaft gesetzt. Folge:  rollt steilsten Abstieg hinunter rollt evtl. in Tal auf halber Höhe (lokales Minimum) =&amp;gt; bleibt dort gefangen    =&amp;gt; &amp;quot;Schütteln der Landschaft&amp;quot; -- Ball springt aus dem Tal und rollt in anderes Tal</description>
+    </item>
+    
+    <item>
+      <title>Lösen von diskreten CSP</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/</guid>
+      <description>Einfärben von Landkarten als CSP   Tafelbeispiel: Suche nach Lösung 
+Endliche Domänen: Formulierung als Suchproblem def BT_Search(assignment, csp): if complete(assignment): return assignment var = VARIABLES(csp, assignment) for value in VALUES(csp, var): if consistent(value, var, assignment, csp): assignment += {var = value} if INFERENCE(csp, assignment, var) != failure: result = BT_Search(assignment, csp) if result != failure: return result assignment -= {var = value} return failure Quelle: Eigener Code basierend auf einer Idee nach [Russell2020, S.</description>
+    </item>
+    
+    <item>
+      <title>Minimax</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/</guid>
+      <description>Spiele als Suchproblem: Minimax Terminologie   Zwei abwechselnd spielende Spieler: MAX und MIN, wobei MAX beginnt
+ Beide Spieler spielen in jedem Zug optimal Spielergebnis wird aus Sicht von MAX bewertet:  $+1$, wenn Spieler MAX gewinnt $-1$, wenn Spieler MIN gewinnt $0$, wenn unentschieden   Spieler MAX versucht, das Spielergebnis zu maximieren Spieler MIN versucht, das Spielergebnis zu minimieren    Startzustand: Initialer Zustand des Spielbrettes</description>
+    </item>
+    
+    <item>
+      <title>Modellierung mit Genetischen Algorithmen</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/</guid>
+      <description>EA -- Allgemeiner Ablauf   Kodierung Individuen   Binäre Lösungsrepräsentation (Bitstring): $\mathbf{g} = (g_1, \dots, g_m)\in { 0,1}^m$
+ String gliedert sich in $n$ Elemente (mit $n \le m$) =&amp;gt; jedes Segment entspricht einer Problemvariablen Dekodierungsfunktion $\Gamma : {0,1}^m \to \mathbb{R}^n$  Alle relevanten Aspekte des Problems müssen in die Codierung einfließen!
+Bei ES hat man einen Vektor mit reellen Zahlen, wobei jeder Eintrag einen Parameter des Problems darstellt.</description>
+    </item>
+    
+    <item>
+      <title>NN2 - Lineare Regression</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/</guid>
+      <description>Kurze Übersicht Formalisierung  Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis) Die Hypothesenfunktion ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$: $$ h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n $$  Der Verlust (engl. loss) für einen Datenpunkt $ $ ist das Fehlerquadrat: $$ \mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2 $$  Die Kosten (engl.</description>
+    </item>
+    
+    <item>
+      <title>Problemlösen</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/</guid>
+      <description>Motivation: Roboter in einer Bibliothek   Aktionen:
+ Right (R) Left (L) Take (T) Drop (D)   Wahrnehmungen:
+ In welchem Raum bin ich? Habe ich das Buch?    Aufgabe: Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
+Hinweis Agent, Umwelt, Modellierung 
+Bemerkungen zur Umwelt:
+ Beobachtbarkeit der Umwelt kann variieren: &amp;quot;voll beobachtbar&amp;quot; bis zu &amp;quot;unbeobachtbar&amp;quot; Umwelt kann &amp;quot;deterministisch&amp;quot; oder &amp;quot;stochastisch&amp;quot; sein: Führt eine Aktion in einem Zustand immer zum selben Folgezustand?</description>
+    </item>
+    
+    <item>
+      <title>Suche mit Best First</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/</guid>
+      <description>Hole das Buch   =&amp;gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) + h(n)$
+ $n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&amp;gt; $h(n)$ wird auch &amp;quot;heuristische Funktion&amp;quot; oder &amp;quot;Heuristik&amp;quot; genannt  Varianten:
+ Branch-and-Bound Best First A*  Best-First (BF, BFS)   Idee: Expandiere den partiellen Weg, der verspricht, dem Ziel am nächsten zu sein (Heuristik)</description>
+    </item>
+    
+    <item>
+      <title>Suche mit Breitensuche</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/</guid>
+      <description>Hole das Buch   =&amp;gt; Problemlösen == Suche im Graphen
+Uninformierte (&amp;quot;blinde&amp;quot;) Suche:
+Keine Informationen über die Kosten eines Pfades: Nur die Pfadlänge (Anzahl der Schritte) zählt.
+Varianten:
+ Tiefensuche Breitensuche  Breitensuche (BS, BFS) Erinnerung Graph-Search
+ Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein Entnehme Knoten aus der Datenstruktur:  Knoten ist gesuchtes Element: Abbruch, melde &amp;quot;gefunden&amp;quot; Markiere aktuellen Knoten, und Expandiere alle Nachfolger des Knotens und füge alle unmarkierten Nachfolger, die noch nicht in der Datenstruktur sind, in die Datenstruktur ein   Falls die Datenstruktur leer ist: Abbruch, melde &amp;quot;nicht gefunden&amp;quot; Gehe zu Schritt 2  =&amp;gt; Was passiert, wenn wir eine Queue einsetzen?</description>
+    </item>
+    
+    <item>
+      <title>Blatt 03: Spiele</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet03/</guid>
+      <description>A3.1: Handsimulation: Minimax und alpha-beta-Pruning (3P)    (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
+  (1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+  (1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an.</description>
+    </item>
+    
+    <item>
+      <title>Heuristiken</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/</guid>
+      <description>VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?   VARIABLES: Welche Variable zuerst ausprobieren?
+Minimum Remaining Values (MRV): (vgl. [Russell2020, S. 177])
+  Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)
+=&amp;gt; reduziert den Verzweigungsgrad
+  Tafelbeispiel 
+Beispiel:
+ Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&amp;gt; wähle A B und C haben nur noch zwei freie Werte =&amp;gt; wähle B (oder C) C hat nur noch einen Wert, D noch zwei, der Rest drei =&amp;gt; wähle C  VARIABLES: Gleichstand bei MRV   VARIABLES: Welche Variable zuerst ausprobieren?</description>
+    </item>
+    
+    <item>
+      <title>Heuristiken</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/</guid>
+      <description>Wenn die Zeit nicht reicht: Suchtiefe begrenzen   Einführung neuer Funktionen:
+  Cutoff-Test statt Terminal-Test
+Beispielsweise bei erreichter Tiefe oder Zeitüberschreitung
+  Eval statt Utility
+Bewertung der erreichten Position (statt nur Bewertung des Endzustandes)
+    Bedingungen an Eval:
+ Endknoten in selber Reihenfolge wie bei Utility Schnell zu berechnen (!)    Beispiel Schach   Mögliche Evaluierungskriterien:
+ Materialwert: Bauer 1, Läufer/Springer 3, Turm 5, Dame 9 Stellungsbewertung: Sicherheit des Königs, Stellung der Bauern Daumenregeln: 3 Punkte Vorteil =&amp;gt; sicherer Sieg    Nutzung gewichteter Features $f_i$: $\operatorname{Eval}(s) = w_1f_1(s) + w_2f_2(s) + \ldots$</description>
+    </item>
+    
+    <item>
+      <title>NN3 - Logistische Regression</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/</guid>
+      <description>Kurze Übersicht Formalisierung   Ausgabe $y$ ist reelle Zahl aus dem stetigen Bereich $(0,1)$
+  Die Hypothesenfunktion ist:
+$$ h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) \tag{1}$$   Der Kreuzentropie Verlust (engl. Cross-Entropy) für einen Datenpunkt $ $:
+$$ \mathcal{L}(a, y) = - y \log(a) - (1-y) \log(1-a)\tag{2} $$ wobei hier \$a := \$ die Vorhersage ist.   Die Kosten als durchschnittlicher Verlust über alle Datenpunkte $ x^{(1)}, , x^{(m)} $:</description>
+    </item>
+    
+    <item>
+      <title>Pruning</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/</guid>
+      <description>Pruning: Bedingt irrelevante Attribute Baum: $\alpha = x_1(x_2(A, B), x_2(A, B), x_2(A, B))$
+$x_1$ ist bedingt irrelevant =&amp;gt; Vereinfachung: $\alpha = x_2(A, B)$
+Allgemein:
+ Sei $\tilde{x}$ Weg zu Nichtendknoten $x_t$ Baum dort $\alpha/\tilde{x} = x_t(\alpha_1, \ldots, \alpha_{m_t})$ $x_t$ ist bedingt irrelevant unter der Bedingung $\tilde{x}$, wenn $\alpha_1 = \alpha_2 = \ldots = \alpha_{m_t}$ Vereinfachung: Ersetze in $\alpha/\tilde{x}$ den Test $x_t$ durch $\alpha_1$  Anmerkung: Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum hat exakt die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.</description>
+    </item>
+    
+    <item>
+      <title>Suche mit A*</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/</guid>
+      <description>Hole das Buch   =&amp;gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) + h(n)$
+ $n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&amp;gt; $h(n)$ wird auch &amp;quot;heuristische Funktion&amp;quot; oder &amp;quot;Heuristik&amp;quot; genannt  Varianten:
+ Branch-and-Bound Best First A*  A*-Suche   Kombination aus Branch-and-Bound und Best-First-Suche</description>
+    </item>
+    
+    <item>
+      <title>Alpha-Beta-Pruning</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/</guid>
+      <description>Verbesserung Minimax-Algorithmus  =&amp;gt; Minimax-Baum: Verbesserungen möglich?
+Tafelbeispiel: Baum und Verbesserungen 
+Alpha-beta-Pruning Minimax-Algorithmus mit zusätzlichen Informationen:
+ $\alpha$: bisher bester Wert für MAX (höchster Wert) $\beta$: bisher bester Wert für MIN (kleinster Wert)  =&amp;gt; Beobachtungen:
+ $\alpha$ für MAX-Knoten wird nie kleiner $\beta$ für MIN-Knoten wird nie größer  Tafelbeispiel: Beste Werte einzeichnen 
+Pruning-Regeln   Schneide (unter) MIN-Knoten ab, deren $\beta$ $\le$ dem $\alpha$ des MAX-Vorgängers ist.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 04: Constraints</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet04/</guid>
+      <description>A4.1: Logikrätsel (2P) Betrachten Sie die Variante des berühmten &amp;quot;Einstein-Rätsels&amp;quot; auf Wikipedia.
+Formulieren Sie das Problem als CSP (Variablen, Wertebereiche, Constraints) auf dem Papier.
+Hinweis: Machen Sie sich zunächst klar, was die Variablen und was deren Wertebereiche sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
+Thema: Formulierung von Problemen als CSP
+A4.2: Framework für Constraint Satisfaction (2P) Checken Sie das AIMA-Repository github.com/aimacode/aima-java aus. Im Paket aima.core.search.csp finden Sie Java-Klassen zum Umgang mit CSPs sowie einige der in der VL besprochenen Algorithmen und Heuristiken.</description>
+    </item>
+    
+    <item>
+      <title>CAL3</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/</guid>
+      <description>CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen   Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
+  $n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
+  Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+  Endknoten mit Vereinigungsklasse:
+ Zähler für $k$ erhöhen, bzw. $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen    Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+  Für genau eine Klasse gilt: $P(k | \tilde{x}) \ge S_2$: =&amp;gt; Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!</description>
+    </item>
+    
+    <item>
+      <title>Kantenkonsistenz und AC-3</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/</guid>
+      <description>Problem bei BT-Suche Zuweisung eines Wertes an Variable $X$:
+ Passt zu aktueller Belegung Berücksichtigt aber nicht restliche Constraints =&amp;gt; macht weitere Suche u.U. unmöglich/schwerer  Lösung: Nach Zuweisung alle nicht zugewiesenen Nachbarvariablen prüfen
+INFERENCE: Vorab-Prüfung (Forward Checking)   Inference: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [Russell2020, S. 178])
+Nach Zuweisung eines Wertes an Variable $X$:
+ Betrachte alle nicht zugewiesenen Variablen $Y$:  Falls Constraints zw. $X$ und $Y$, dann .</description>
+    </item>
+    
+    <item>
+      <title>NN4 - Overfitting und Regularisierung</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/</guid>
+      <description>Kurze Übersicht Nichtlineare Modelle  Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der ursprünglichen Merkmale Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen Beziehungen Bemerkung: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird weiterhin logistische Regression in einem erweiterten Merkmalraum durchgeführt.  Überanpassung und Regularisierung  Die Überanpassung (engl. Overfitting) ist eines der häufigsten und wichtigsten Probleme in ML und DL &amp;quot;Was im Bereich des maschinellen Lernens Professionelle von Amateuren unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 05: Entscheidungsbäume</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet05/</guid>
+      <description>A5.1: Handsimulation CAL2 (2P) Zeigen Sie mit einer Handsimulation, wie CAL2 mit dem folgenden Trainingsdatensatz schrittweise einen Entscheidungsbaum generiert. Nutzen Sie die linearisierte Schreibweise.
+   Beispiel $x_1$ $x_2$ $x_3$ Klasse     1 a a a 1   2 a b a 2   3 a a b 1   4 b a b 1   5 a a c 1   6 b b b 2    Thema: Anwendung von CAL2</description>
+    </item>
+    
+    <item>
+      <title>Entropie</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/</guid>
+      <description>Wie Attribute wählen? Erinnerung: CAL2/CAL3  Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &amp;quot;richtigen&amp;quot; Attributwahl bei Verzweigung unklar  =&amp;gt; Betrachte stattdessen die komplette Trainingsmenge!
+Relevanz =&amp;gt; Informationsgehalt  Shannon/Weaver (1949): Entropie  Maß für die Unsicherheit einer Zufallsvariablen Anzahl der Bits zur Darstellung der Ergebnisse eines Zufallsexperiments    Beispiele  Münze, die immer auf dem Rand landet: keine Unsicherheit, 0 Bit Faire Münze: Kopf oder Zahl: Entropie 1 Bit Fairer 4-seitiger Würfel: 4 mögliche Ausgänge: Entropie 2 Bit Münze, die zu 99% auf einer Seite landet: Entropie nahe Null  =&amp;gt; Anzahl der Ja/Nein-Fragen, um zur gleichen Information zu kommen</description>
+    </item>
+    
+    <item>
+      <title>NN5 - Multilayer Perzeptron</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/</guid>
+      <description>Kurze Übersicht Multilayer Perzeptron (MLP)  Das Perzeptron kann nur linear separable Daten korrekt klassifizieren. Durch das Zusammenschließen von mehreren Perzeptronen kann man ein mehrschichtiges Perzeptron (engl. Multilayer Perceptron) aufstellen, das komplexere Funktionen modellieren kann. Ein MLP wird oft auch als Feed Forward Neural Network oder als Fully Connected Neural Network bezeichnet. Die &amp;quot;inneren&amp;quot; Schichten eines solchen Netzwerkes sind sogenannte versteckte Schichten (engl. hidden layer). Das sind alle Schichten ausgenommen die Eingangs- und Ausgangsschicht.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 06: Perzeptron, Lineare Regression</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet06/</guid>
+      <description>ul { list-style-type: lower-alpha; } ul ul { list-style-type: circle; }  A6.1: Entscheidungsgrenze (2P)  (1P) Betrachten Sie das durch den Gewichtsvektor $ (w_0,w_1,w_2)^T = (2, 1, 1)^T $ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird. (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?  $ (w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T $ $ (w_0,w_1,w_2)^T = (200, 100, 100)^T $ $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$ $ (w_0,w_1,w_2)^T = (-2, -1, -1)^T $    Thema: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)</description>
+    </item>
+    
+    <item>
+      <title>ID3 und C4.5</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/</guid>
+      <description>Wie Attribute wählen? Erinnerung: CAL2/CAL3
+ Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &amp;quot;richtigen&amp;quot; Attributwahl bei Verzweigung unklar  =&amp;gt; Betrachte stattdessen die komplette Trainingsmenge!
+Erinnerung Entropie: Maß für die Unsicherheit   Entropie $H(S)$ der Trainingsmenge $S$: relative Häufigkeit der Klassen zählen
+  Mittlere Entropie nach Betrachtung von Attribut $A$
+$$ R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) $$   Informationsgewinn durch Betrachtung von Attribut $A$</description>
+    </item>
+    
+    <item>
+      <title>NN6 - Backpropagation</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/</guid>
+      <description>Kurze Übersicht Forwärts- und Rückwärtslauf   Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner Forwärtsschritt von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet:
+$$ Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1} $$ $$A^{[l]} = g(Z^{[l]}) \tag{2} $$ Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).   Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen Rückwärtsschritt von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:</description>
+    </item>
+    
+    <item>
+      <title>Blatt 07: Logistische Regression</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet07/</guid>
+      <description>A7.1: Logistische Regression (6P)   (1P)
+ Konstruieren Sie einen Datensatz $\mathcal{D}$ mit $m=100$ gleichförmig verteilten Zufallspunkten aus dem Bereich $ = [−1, 1] $. Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze ihrer Zielfunktion $f$: Punkte auf der einen Seite der Linie sollen als +1 und die anderen als −1 klassifiziert werden.</description>
+    </item>
+    
+    <item>
+      <title>NN7 - Training &amp; Testing</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/</guid>
+      <description>Kurze Übersicht Training und Testing   Der tatsächliche Erfolg eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. hohe Vorhersagekraft, gute Generalisierung!
+  Die Menge aller gelabelten Daten in Trainingsset und Testset aufteilen, Testset nicht während des Trainings einsetzen!.
+ $E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch **in-sample error**. $E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch **out-of-sample error**.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 08: Overfitting &amp; MLP</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet08/</guid>
+      <description>A8.1: Lineares MLP (2P) Gegeben sei ein MLP mit linearen Aktivierungsfunktionen, d.h. für jedes Neuron berechnet sich der Output durch die gewichtete Summe der Inputs: $ y = g(w^T x) $, wobei $ g(z) = z $ gilt, also $ y = w^T x $. Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen ersetzt werden kann. Betrachten Sie dazu ein zweilagiges Netz bestehend aus einer Ausgabe- und einer versteckten Schicht.</description>
+    </item>
+    
+    <item>
+      <title>NN8 - Performanzanalyse</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/</guid>
+      <description>Kurze Übersicht Performanzmetriken für Klassifizierungsprobleme Wahrheitsmatrix (engl. Confusion Matrix)  Gibt eine Übersicht über die Anzahl von richtig und falsch klassifizierten Datenpunkten (bei binärer Klassifizierung)  $TP = $ # True Positives $ = $ Anzahl richtiger 1-Vorhersagen $FP = $ # False Positives $ = $ Anzahl falscher 1-Vorhersagen $FN = $ # False Negatives $ = $ Anzahl falscher 0-Vorhersagen $TN = $ # True Negatives $ = $ Anzahl richtiger 0-Vorhersagen   Bei Klassifizierungsproblemen mit $N$ Klassen hat man eine $N \times N$ Matrix, die in Position $(i,j)$ die Anzahl der Klasse-$j$-Beispiele enthält, die als Klasse-$i$ vorhergesagt wurden.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 09: Backpropagation</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet09/</guid>
+      <description>A9.1: Backpropagation: Hidden Layer (2P) In der Vorlesung wurde(n) die Gewichtsupdates bei der Backpropagation für die Ausgabeschicht und die davor liegende letzte versteckte Schicht hergeleitet, wobei in der Ausgabeschicht die Sigmoid und in der versteckten Schicht die ReLU Aktivierungsfunktionen eingesetzt wurden. Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Netz mit zwei echten versteckten Schichten) her. Verwenden Sie dabei die Sigmoid Funktion als Aktivierung in allen Schichten.</description>
+    </item>
+    
+    <item>
+      <title>Blatt 10: Testing und Validierung</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet10/</guid>
+      <description>ul { list-style-type: lower-alpha; } ul ul { list-style-type: circle; }  A10.1: Fehlerhafter Einsatz der Testdaten (2P) Wo genau liegt das Problem in dem folgenden Lernszenario in Abbildung 1? Geben Sie eine ausführliche Beschreibung.
+Abbildung 1 - Einsatz der Testdaten gegen Überanpassung Thema: Verständnis &amp;quot;Data Leakage&amp;quot; im Lernprozess
+A10.2: Regularisierungsparameter (2P) Sie haben ein relativ komplexes Neuronales Netzwerk für Ihr Klassifizierungsproblem gewählt und möchten dafür einen guten Regularisierungsparameter $\lambda$ bestimmen (fine-tuning).</description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/credits/</guid>
+      <description>Beim Generieren der Vortrags-Folien und der Webseiten für das Unterrichtsmaterial kommen einige externe Projekte zum Einsatz, die unter eigenen Lizenzen stehen und die nicht von der CC BY-SA 4.0 Lizenz dieses Projekts erfasst sind.
+Erzeugen der Folien Für das Erzeugen der Vortrags-Folien kommen u.a. folgende Projekte zum Einsatz:
+ Pandoc Pandoc-Lecture TeX Live Beamer Metropolis  Erzeugen der Webseiten Für die Vorverarbeitung des Materials werden die beiden Projekte eingesetzt:
+ Pandoc Pandoc-Lecture  Die Webseiten für das Unterrichtsmaterial werden mit folgenden Projekten erzeugt:</description>
+    </item>
+    
+    <item>
+      <title>Datenschutzerklärung</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/privacy/</guid>
+      <description>Hinweise zum Datenschutz: Cookies, Informationen, ... (TODO: zu klären mit ORCA-Team)</description>
+    </item>
+    
+    <item>
+      <title>Fahrplan</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/schedule/</guid>
+      <description>Woche Vorlesung Praktikum/Übung      1 (KW40)   04.10.21 (Sprechstunde: cagix)   MISC &amp;gt; Syllabus Hinweis: Kick-Off FHB (cagix und Canan)   INTRO &amp;gt; Einführung KI   INTRO &amp;gt; Problemlösen   &amp;gt;&amp;gt; KW41 freigeschaltet. Blatt 1 bearbeiten!
+       2 (KW41)   11.10.21 (Sprechstunde: cagix)   SEARCH &amp;gt; UNINFORMED &amp;gt; Tiefensuche   SEARCH &amp;gt; UNINFORMED &amp;gt; Breitensuche   SEARCH &amp;gt; INFORMED &amp;gt; Branch-and-Bound   SEARCH &amp;gt; INFORMED &amp;gt; Best First   SEARCH &amp;gt; INFORMED &amp;gt; A*   &amp;gt;&amp;gt; KW42 freigeschaltet.</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/imprint/</guid>
+      <description>Hier kommt ein Impressum hin (TODO: zu klären mit ORCA-Team)</description>
+    </item>
+    
+    <item>
+      <title>Note und Credits (FHB)</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading/grading-fhb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading/grading-fhb/</guid>
+      <description>Prüfungsform FHB: Testat plus Klausur, 5 ECTS  Mind. 6 der 10 Aufgabenblätter jeweils ausreichend (mind. 60% der Punkte des jeweiligen Blattes) bearbeitet =&amp;gt; Testat E-Klausur am Ende des Semesters =&amp;gt; Note Gesamtnote: Klausurnote  Hinweise zur Modulprüfung FHB Die Modulprüfung erfolgt in Form einer schriftlichen Prüfung (&amp;quot;Klausur&amp;quot;). Diese wird in beiden Prüfungszeiträumen in Form eines E-Assessments über eine spezielle ILIAS-Instanz durchgeführt. Nähere Informationen siehe &amp;ldquo;Prüfungsvorbereitung (FHB)&amp;quot;.
+Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt wird.</description>
+    </item>
+    
+    <item>
+      <title>Note und Credits (TDU)</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading/grading-tdu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading/grading-tdu/</guid>
+      <description>Notenzusammensetzung TDU Zwischen- und Endprüfung Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus vorgesehen.
+   Prüfung Gewicht     Zwischenprüfung (ZP) 40 %   Endprüfung (EP) 60 %    Bonuspunkte für Aktive Teilnahme an der Übung Aktive Teilnahme an der Übung (UE) bringt bis zu +20 Bonus-Punkte für die Endprüfung, allerdings nur wenn die 40 Punkte Mindestgrenze erreicht wird.
+Das heisst, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20% der Übungsnote als Bonus-Punkte zu der Endprüfungsnote hinzugefügt.</description>
+    </item>
+    
+    <item>
+      <title>Prüfungsvorbereitung (FHB)</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/exam/exam-fhb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/exam/exam-fhb/</guid>
+      <description>Elektronische Klausur: Termin, Materialien Die Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem Prüfungs-ILIAS durchgeführt wird.
+Es wird angestrebt, die Klausur in Präsenz in den Rechnerpools am Campus Minden durchzuführen. Falls dies wegen der Corona-Situation oder anderer Umstände nicht möglich sein sollte, wird die Klausur als &amp;quot;Open-Book-Ausarbeitung&amp;quot; im Home-Office durchgeführt.
+Termin 1: Mo, 31.01.2022, 13:00 -- 14:30 Uhr
+ Dauer 90 Minuten. Es wird in beiden Prüfungszeiträumen ein Termin angeboten (konkreter Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).</description>
+    </item>
+    
+    <item>
+      <title>Ressourcen</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/resources/</guid>
+      <description>Was brauche ich? Literatur ... Basics (&amp;quot;Must Have&amp;quot;!)  &amp;quot;Artificial Intelligence: A Modern Approach&amp;quot; (AIMA): [Russell2020] &amp;quot;Introduction to Artificial Intelligence&amp;quot;: [Ertel2017] &amp;quot;Machine Learning&amp;quot;: [Mitchell2010]  Weitere empfohlene Literatur Falls der [Russell2020] noch nicht erhältlich ist, kann auch eine ältere Ausgabe (etwa [Russell2014]) verwendet werden.
+Ergänzend zum [Russell2020] empfiehlt sich ein Blick in [Ertel2017] (bzw. [Ertel2016], als etwas ältere deutschsprachige Ausgabe), wo ebenfalls beinahe alle Themen besprochen werden.
+Speziell zum Thema Machine Learning seien [Kubat2017] und [Mitchell2010] empfohlen.</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/syllabus/</guid>
+      <description>Worum geht&#39;s hier?  Quelle: AvB - RoboCup 2013 - Eindhoven, by RoboCup2013, licensed under CC BY 2.0
+Was ist Intelligenz? Was ist künstliche Intelligenz?  Wie baut man intelligente Systeme? Was braucht man für &amp;quot;Cmdr. Data&amp;quot;? Welche Teilgebiete existieren? Welche Methoden und Algorithmen gibt es? Wie funktionieren die?  Ziele  Hineinschnuppern in fast alle Fächer des &amp;quot;Apothekenschranks&amp;quot;: Wie funktioniert&#39;s, wozu ist es gut? Methoden-Baukasten zur Lösung unterschiedlichster Probleme Grundlegendes Verständnis für Anwendungen in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeuge  Überblick Modulinhalte  Problemlösen  Zustände, Aktionen, Problemraum Suche (blind, informiert): Breiten-, Tiefensuche, Best-First, Branch-and-Bound, A-Stern Lokale Suche: Gradientenabstieg, Genetische/Evolutionäre Algorithmen (GA/EA) Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken Constraints: Backtracking, Heuristiken, Propagation, AC-3    Maschinelles Lernen  Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung Entscheidungsbäume: CAL2, CAL3, ID3, C4.</description>
+    </item>
+    
+  </channel>
+</rss>

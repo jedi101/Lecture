@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.87.0" />
+    <meta name="description" content="">
+<meta name="author" content="cagix">
+
+    <link rel="icon" href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/images/favicon.png" type="image/png">
+
+    <title>ID3 und C4.5   </title>
+
+    
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/nucleus.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/fontawesome-all.min.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/hybrid.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/featherlight.min.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/perfect-scrollbar.min.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/auto-complete.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/atom-one-dark-reasonable.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/theme.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/tabs.css?1643210525" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/hugo-theme.css?1643210525" rel="stylesheet">
+    
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/theme-green.css?1643210525" rel="stylesheet">
+    
+    
+
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/jquery-3.3.1.min.js?1643210525"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial !important;
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+</style>
+
+  </head>
+  <body class="" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/images/logo.png'>
+</a>
+
+    </div>
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/" title="Einführung KI" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/">
+          Einführung KI
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/" title="Intro: Was ist Künstliche Intelligenz?" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/">
+        Einführung KI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/" title="Problemlösen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/">
+        Problemlösen
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/" title="Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/">
+          Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/" title="Uninformierte Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/">
+          Uninformierte Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/" title="Suche mit Tiefensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/">
+        Tiefensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/" title="Suche mit Breitensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/">
+        Breitensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/" title="Informierte Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/">
+          Informierte Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/" title="Suche mit Branch-and-Bound" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/">
+        Branch-and-Bound
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/" title="Suche mit Best First" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/">
+        Best First
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/" title="Suche mit A*" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/">
+        A*
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/" title="Lokale Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/">
+          Lokale Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/" title="Lokale Suche: Gradientensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/">
+        Gradientensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/" title="Lokale Suche: Simulated Annealing" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/">
+        Simulated Annealing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/" title="Genetische Algorithmen" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/">
+          Genetische Algorithmen
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/" title="Einführung Evolutionäre Algorithmen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/">
+        Intro EA/GA
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/" title="Modellierung mit Genetischen Algorithmen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/">
+        Genetische Algorithmen
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/" title="Spiele" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/">
+          Spiele
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/" title="Einführung Optimale Spiele" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/">
+        Optimale Spiele
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/" title="Minimax" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/">
+        Minimax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/" title="Heuristiken" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/">
+        Heuristiken
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/" title="Alpha-Beta-Pruning" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/">
+        Alpha-Beta-Pruning
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/" title="Constraintsolving" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/">
+          CSP
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/" title="Einführung Constraints" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/">
+        Intro
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/" title="Lösen von diskreten CSP" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/">
+        Lösen von diskreten CSP
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/" title="Heuristiken" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/">
+        Heuristiken
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/" title="Kantenkonsistenz und AC-3" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/">
+        AC-3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/" title="Entscheidungsbäume" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/">
+          Entscheidungsbäume
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/" title="Machine Learning 101" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/">
+        Machine Learning 101
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/" title="CAL2" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/">
+        CAL2
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/" title="Pruning" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/">
+        Pruning
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/" title="CAL3" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/">
+        CAL3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/" title="Entropie" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/">
+        Entropie
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/" title="ID3 und C4.5" class="dd-item active">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/">
+        ID3 und C4.5
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/" title="Naive Bayes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/">
+          Naive Bayes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/" title="Wiederholung Wahrscheinlichkeitstheorie" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/">
+        Wahrscheinlichkeiten
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/" title="Klassifikation mit Naive Bayes" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/">
+        Naive Bayes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/" title="NN: Einführung in Neuronale Netze" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/">
+          Neuronale Netze
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/" title="NN1 - Das Perzeptron" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/">
+        NN1 - Perzeptron
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/" title="NN2 - Lineare Regression" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/">
+        NN2 - Lineare Regression
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/" title="NN3 - Logistische Regression" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/">
+        NN3 - Logistische Regression
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/" title="NN4 - Overfitting und Regularisierung" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/">
+        NN4 - Overfitting
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/" title="NN5 - Multilayer Perzeptron" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/">
+        NN5 - MLP
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/" title="NN6 - Backpropagation" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/">
+        NN6 - Backpropagation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/" title="NN7 - Training &amp; Testing" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/">
+        NN7 - Training &amp; Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/" title="NN8 - Performanzanalyse" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/">
+        NN8 - Performanzanalyse
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/schedule"><i class='fas fa-bookmark'></i> Fahrplan</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments"><i class='fas fa-bookmark'></i> Praktikum</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading"><i class='fas fa-bookmark'></i> Note/Credits</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/syllabus"><i class='fas fa-bookmark'></i> Syllabus</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/resources"><i class='fas fa-bookmark'></i> Ressourcen</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/imprint'>Impressum</a>,
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/privacy'>Datenschutz</a>,
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/credits'>Credits</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/KI-Vorlesung/Lecture/edit/master/markdown/dtl/id3/index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/'>KI W21</a> > <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/'>Entscheidungsbäume</a> > ID3 und C4.5
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#wie-attribute-wählen">Wie Attribute wählen?</a></li>
+        <li><a href="#erinnerung-entropie-maß-für-die-unsicherheit">Erinnerung Entropie: Maß für die Unsicherheit</a></li>
+        <li><a href="#informationsgewinn-kriterium-zur-auswahl-von-attributen">Informationsgewinn: Kriterium zur Auswahl von Attributen</a></li>
+        <li><a href="#entscheidungsbaumlerner-id3-quinlan-1986">Entscheidungsbaumlerner ID3 (Quinlan, 1986)</a>
+          <ul>
+            <li><a href="#beispiel-id3">Beispiel ID3</a></li>
+          </ul>
+        </li>
+        <li><a href="#beobachtung-spanoperatornamegainspan-ist-bei-mehrwertigen-attributen-höher">Beobachtung: <span>$\operatorname{Gain}$</span> ist bei mehrwertigen Attributen höher</a></li>
+        <li><a href="#c45-als-verbesserung-zu-id3">C4.5 als Verbesserung zu ID3</a></li>
+        <li><a href="#beispiele-zur-normierung-bei-c45">Beispiele zur Normierung bei C4.5</a></li>
+        <li><a href="#wrap-up">Wrap-Up</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              ID3 und C4.5
+            </h1>
+          
+
+        
+
+
+
+
+    
+
+
+
+
+
+<div class="tldr">
+    <h2>TL;DR</h2>
+
+    
+        <p>Der Entscheidungsbaum-Lernalgorithmus <strong>ID3</strong> nutzt den Informationsgehalt für die Entscheidung
+bei der Attributwahl: Nimm das Attribut, welches einen möglichst hohen Informationsgehalt hat.
+Oder andersherum: Wähle das Attribut, bei dem die verbleibende mittlere Entropie der Trainingsmenge
+nach der Wahl des Attributs am kleinsten ist. Oder noch anders formuliert: Nimm das Attribut, bei
+dem die Differenz zwischen der Entropie der Trainingsmenge (vor der Wahl des Attributs) und der
+verbleibenden mittleren Entropie (nach der Wahl des Attributs) am größten ist (die Differenz nennt
+man auch &quot;<em>Information Gain</em>&quot;). Die Trainingsmenge wird entsprechend der Ausprägung in Bezug auf
+das eben gewählte Merkmal aufgeteilt und an die Kinder des Knotens weiter gereicht; dort wird der
+Baum rekursiv weiter aufgebaut.</p>
+<p>Durch eine Normierung des <em>Information Gain</em> kann eine Verbesserung in Bezug auf mehrwertige
+Attribute erreicht werden, dies führt zum Algorithmus <strong>C4.5</strong>.</p>
+
+    
+
+    
+        <h3>Videos (YouTube)</h3>
+        
+
+<ul>
+
+    
+    
+
+    
+        
+        
+        <div class="embed-video-player">
+            <iframe class="youtube-player" src="https://www.youtube-nocookie.com/embed/Yo1cmeS6BK8" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    
+
+    
+    
+
+</ul>
+
+    
+
+    
+        <h3>Videos (FH-Medienportal)</h3>
+        
+
+<ul>
+
+    
+    
+        
+    
+
+    
+    
+    
+        
+    
+
+    
+        <li><a href="https://www.fh-bielefeld.de/medienportal/m/aa69406cfdf0ce8b2b614dd475926b56c8025239c5b4458ec7741c7733c6077fd192e4db6f58c8a3e39b7b895c2ddedf83327640326bfbedc2617c4f75bc59bd" target="_blank" rel="nofollow noopener noreferrer">Direktlink FH-Medienportal: KI ID3 und C4.5</a></li>
+    
+
+</ul>
+
+    
+
+    
+</div>
+
+
+    
+
+
+<div class="outcomes">
+    <h2>Lernziele</h2>
+    
+        <h3>Anwenden (K3)</h3>
+<ul>
+<li>Entscheidungsbaumalgorithmen ID3 und C4.5</li>
+</ul>
+
+    
+</div>
+
+
+    <h2 id="wie-attribute-wählen">Wie Attribute wählen?</h2>
+<p>Erinnerung: CAL2/CAL3</p>
+<ul>
+<li>Zyklische Iteration durch die Trainingsmenge</li>
+<li>Ausschließlich aktuelles Objekt betrachtet</li>
+<li><span class='alert'>Reihenfolge</span> der &quot;richtigen&quot; Attributwahl bei Verzweigung unklar</li>
+</ul>
+<p>=&gt; Betrachte stattdessen die <strong>komplette</strong> Trainingsmenge!</p>
+<h2 id="erinnerung-entropie-maß-für-die-unsicherheit">Erinnerung Entropie: Maß für die Unsicherheit</h2>
+<ul>
+<li>
+<p>Entropie <span>$H(S)$</span> der Trainingsmenge <span>$S$</span>: relative Häufigkeit der Klassen zählen</p>
+</li>
+<li>
+<p>Mittlere Entropie nach Betrachtung von Attribut <span>$A$</span></p>
+<div>$$
+    R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+$$</div>
+</li>
+<li>
+<p>Informationsgewinn durch Betrachtung von Attribut <span>$A$</span></p>
+<div>$$
+\begin{array}{rcl}
+    \operatorname{Gain}(S, A) &=& H(S) - R(S, A)\\[5pt]
+                            &=& H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+\end{array}
+$$</div>
+</li>
+</ul>
+<p><span>$R(S,A)$</span> ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A.
+Je kleiner <span>$R(S,A)$</span>, um so kleiner die <strong>verbleibende Unsicherheit</strong> bzw.
+um so kleiner die Anzahl der nötigen Bits zur Darstellung der
+partitionierten Trainingsmenge <strong>nach</strong> Betrachtung von Attribut <span>$A$</span> ...</p>
+<p>=&gt; Je kleiner <span>$R(S,A)$</span>, um so größer der Informationsgewinn</p>
+<h2 id="informationsgewinn-kriterium-zur-auswahl-von-attributen">Informationsgewinn: Kriterium zur Auswahl von Attributen</h2>
+<ol>
+<li>Informationsgewinn für alle Attribute berechnen</li>
+<li>Nehme Attribut mit größtem Informationsgewinn als nächsten Test</li>
+</ol>
+<div class='columns'>
+<div class='column'>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th><span>$x_1$</span></th>
+<th><span>$x_2$</span></th>
+<th><span>$x_3$</span></th>
+<th><span>$k$</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>B</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>B</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='column'>
+<p><span>$H(S) = 0.92 \operatorname{Bit}$</span></p>
+<div>$$
+\begin{array}{rcl}
+\operatorname{Gain}(S, x_1) &=& 0.92 - 0.87 = 0.05 \operatorname{Bit}\\
+\operatorname{Gain}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
+                            &=& 0.25 \operatorname{Bit}\\
+\operatorname{Gain}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
+                            &=& 0.13 \operatorname{Bit}
+\end{array}
+$$</div>
+</div>
+</div>
+<p>Informationsgewinn für <span>$x_2$</span> am höchsten =&gt; wähle <span>$x_2$</span> als nächsten Test</p>
+<h2 id="entscheidungsbaumlerner-id3-quinlan-1986">Entscheidungsbaumlerner ID3 (Quinlan, 1986)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ID3</span>(examples, attr, default):
+    <span style="color:#75715e"># Abbruchbedingungen</span>
+    <span style="color:#66d9ef">if</span> examples<span style="color:#f92672">.</span>isEmpty():  <span style="color:#66d9ef">return</span> default
+    <span style="color:#66d9ef">if</span> examples<span style="color:#f92672">.</span>each(<span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">== </span><span style="color:#a6e22e">A</span>):  <span style="color:#66d9ef">return</span> A  <span style="color:#75715e"># all examples have same class</span>
+    <span style="color:#66d9ef">if</span> attr<span style="color:#f92672">.</span>isEmpty():  <span style="color:#66d9ef">return</span> examples<span style="color:#f92672">.</span>MajorityValue()
+
+    <span style="color:#75715e"># Baum mit neuem Test erweitern</span>
+    test <span style="color:#f92672">=</span> MaxInformationGain(examples, attr)
+    tree <span style="color:#f92672">=</span> new DecisionTree(test)
+    m <span style="color:#f92672">=</span> examples<span style="color:#f92672">.</span>MajorityValue()
+    <span style="color:#66d9ef">for</span> v_i <span style="color:#f92672">in</span> test:
+        ex_i <span style="color:#f92672">=</span> examples<span style="color:#f92672">.</span>select(test <span style="color:#f92672">==</span> v_i)
+        st <span style="color:#f92672">=</span> ID3(ex_i, attr <span style="color:#f92672">-</span> test, m)
+        tree<span style="color:#f92672">.</span>addBranch(label<span style="color:#f92672">=</span>v_i, subtree<span style="color:#f92672">=</span>st)
+    <span style="color:#66d9ef">return</span> tree
+</code></pre></div><p><a href="#id_Russell2020">[Russell2020]</a>: Man erhält aus dem &quot;Learn-Decision-Tree&quot;-Algorithmus <a href="#id_Russell2020">[Russell2020, S. 678, Fig. 19.5]</a>
+den hier vorgestellten ID3-Algorithmus, wenn man die Funktion <span>$\operatorname{Importance}(a, examples)$</span>
+als <span>$\operatorname{InformationGain}(examples, attr)$</span> implementiert/nutzt.</p>
+<p><strong>Hinweis</strong>: Mit der Zeile <code>if examples.each(class == A):  return A</code> soll ausgedrückt werden, dass alle
+ankommenden Trainingsbeispiele die selbe Klasse haben und dass diese dann als Ergebnis zurückgeliefert
+wird. Das &quot;<code>A</code>&quot; steht im obigen Algorithmus nur symbolisch für die selbe Klasse! Es kann also auch ein
+anderes Klassensymbol als &quot;<code>A</code>&quot; sein ...</p>
+<h3 id="beispiel-id3">Beispiel ID3</h3>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th><span>$x_1$</span></th>
+<th><span>$x_2$</span></th>
+<th><span>$x_3$</span></th>
+<th><span>$k$</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>B</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>B</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span>$x2$</span> höchsten Information Gain</li>
+<li><span>$x2=0$</span> =&gt; Beispiele 1,2 =&gt; A</li>
+<li><span>$x2=1$</span> =&gt; Beispiele 3,4,5,6 =&gt; Information Gain berechnen,
+weiter teilen und verzweigen</li>
+</ul>
+<p><a class="btn btn-default btn-crossreference" >
+Tafelbeispiel Anfang ID3
+</a></p>
+<h2 id="beobachtung-spanoperatornamegainspan-ist-bei-mehrwertigen-attributen-höher">Beobachtung: <span>$\operatorname{Gain}$</span> ist bei mehrwertigen Attributen höher</h2>
+<ul>
+<li>
+<p>Faire Münze:</p>
+<ul>
+<li>Entropie = <span>$H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+<li>
+<p>4-seitiger Würfel:</p>
+<ul>
+<li>Entropie = <span>$H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; <span>$\operatorname{Gain}$</span> ist bei mehrwertigen Attributen höher</p>
+<p>Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben als andere.</p>
+<p><em>Anmerkung</em>: Im obigen Beispiel wurde einfach die Entropie für zwei &quot;Attribute&quot; mit unterschiedlich
+vielen Ausprägungen betrachtet, das ist natürlich kein <span>$\operatorname{Gain}(S, A)$</span>. Aber es sollte
+deutlich machen, dass Merkmale mit mehr Ausprägungen bei der Berechnung des Gain für eine Trainingsmenge
+einfach wegen der größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.</p>
+<h2 id="c45-als-verbesserung-zu-id3">C4.5 als Verbesserung zu ID3</h2>
+<p>Normierter Informationsgewinn: <span>$\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A)$</span></p>
+<div>$$
+    \operatorname{Normierung}(A) = \frac{1}{
+        \sum_{v \in \operatorname{Values}(A)} p_v \log_2 \frac{1}{p_v}
+    }
+$$</div>
+<p>C4.5 kann zusätzlich u.a. auch noch mit kontinuierlichen Attributen umgehen, vgl.
+<a href="https://en.wikipedia.org/wiki/C4.5_algorithm">en.wikipedia.org/wiki/C4.5_algorithm</a>.</p>
+<p>In einem <a href="http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf">Paper</a>
+(<a href="https://doi.org/10.1007/s10115-007-0114-2">DOI 10.1007/s10115-007-0114-2</a>) wurde
+der Algorithmus zu den &quot;Top 10 algorithms in data mining&quot; ausgewählt.</p>
+<p>Ein anderer, relativ ähnlich arbeitender Entscheidungsbaumlerner ist der
+<a href="https://en.wikipedia.org/wiki/Decision_tree_learning">CART (Classification And Regression Tree)</a>-Algorithmus,
+wobei der Begriff &quot;CART&quot; allerdings oft auch einfach allgemein für &quot;Entscheidungsbaumlerner&quot;
+genutzt wird.</p>
+<h2 id="beispiele-zur-normierung-bei-c45">Beispiele zur Normierung bei C4.5</h2>
+<ul>
+<li>
+<p>Faire Münze:</p>
+<ul>
+<li>Entropie = <span>$H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$</span></li>
+<li>Normierung: <span>$1/(0.5 \log_2 (1/0.5) + 0.5 \log_2 (1/0.5)) = 1/(0.5 \cdot 1 + 0.5 \cdot 1) = 1$</span></li>
+<li>Normierter Informationsgewinn: <span>$\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+<li>
+<p>4-seitiger Würfel:</p>
+<ul>
+<li>Entropie = <span>$H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$</span></li>
+<li>Normierung: <span>$1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$</span></li>
+<li>Normierter Informationsgewinn: <span>$\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; Normierung sorgt für fairen Vergleich der Attribute</p>
+<p><em>Anmerkung</em>: Auch hier ist die Entropie natürlich kein <span>$\operatorname{Gain}(S, A)$</span>. Das Beispiel soll
+nur übersichtlich deutlich machen, dass der &quot;Vorteil&quot; von Attributen mit mehr Ausprägungen durch die
+Normierung in C4.5 aufgehoben wird.</p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Entscheidungsbaumlerner <strong>ID3</strong>
+<ul>
+<li>Nutze <em>Information Gain</em> zur Auswahl des nächsten Attributs</li>
+<li>Teile die Trainingsmenge entsprechend auf (&quot;nach unten hin&quot;)</li>
+</ul>
+</li>
+<li>Verbesserung durch Normierung des <em>Information Gain</em>: <strong>C4.5</strong></li>
+</ul>
+
+    
+
+
+
+    
+
+
+
+<div class="assignments">
+    <h2>Übungsblätter</h2>
+
+    <ul>
+    
+        
+        
+        <li>
+            <a href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet05/"><strong>Blatt 05: Entscheidungsbäume</strong></a>
+            
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                         (Abgabe: 10.11.2021)
+                    
+                
+            
+                
+            
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+            
+                
+            
+                
+                    
+                
+            
+                
+            
+        </li>
+        
+    
+    </ul>
+
+</div>
+
+
+    
+
+
+
+<div class="bib">
+    <h2>Literatur</h2>
+    <ul>
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Ertel2017">
+            
+                [Ertel2017] <strong>Introduction to artificial intelligence</strong>
+            
+            
+                <br>Ertel, W., Springer, 2017.
+                
+                    ISBN <a href="https://www.digibib.net/openurl/Bi10?isbn=978-3-319-58487-4" target="_blank" rel="nofollow noopener noreferrer">978-3-319-58487-4</a>.
+                
+                
+                    DOI <a href="https://doi.org/10.1007/978-3-319-58487-4" target="_blank" rel="nofollow noopener noreferrer">10.1007/978-3-319-58487-4</a>.
+                
+            
+            
+                <br><em>Entscheidungsbäume: Abschnitt 8.4</em>
+            
+            </li>
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Mitchell2010">
+            
+                [Mitchell2010] <strong>Machine learning</strong>
+            
+            
+                <br>Mitchell, T., McGraw-Hill, 2010.
+                
+                    ISBN <a href="https://www.digibib.net/openurl/Bi10?isbn=978-0-0711-5467-3" target="_blank" rel="nofollow noopener noreferrer">978-0-0711-5467-3</a>.
+                
+                
+            
+            
+                <br><em>ID3: Kapitel 3</em>
+            
+            </li>
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Russell2020">
+            
+                [Russell2020] <a href="http://aima.cs.berkeley.edu" class="icon reading" target="_blank" rel="nofollow noopener noreferrer"><strong>Artificial intelligence: A modern approach</strong></a>
+            
+            
+                <br>Russell, S. und Norvig, P., Pearson, 2020.
+                
+                    ISBN <a href="https://www.digibib.net/openurl/Bi10?isbn=978-0134610993" target="_blank" rel="nofollow noopener noreferrer">978-0134610993</a>.
+                
+                
+            
+            
+                <br><em>Entscheidungsbäume: Abschnitt 19.3</em>
+            
+            </li>
+        
+    
+    </ul>
+</div>
+
+
+
+
+
+        
+        </div>
+        <p><div style="color: darkgray; font-size: smaller;">
+<p>
+    <!-- https://creativecommons.org/choose/ -->
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> Unless otherwise noted, <a href="https://github.com/KI-Vorlesung/Lecture">this work</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/KI-Vorlesung/Lecture/graphs/contributors">contributors</a> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+<br />
+    Icons by <a href="https://fontawesome.com/">Font Awesome</a>.
+    Built with <a href="https://github.com/jgm/pandoc">Pandoc</a> using <a href="https://github.com/cagix/pandoc-lecture">Pandoc-Lecture</a> and <a href="https://github.com/gohugoio/hugo">Hugo</a> using the <a href="https://github.com/matcornic/hugo-theme-learn">Hugo Learn Theme</a> (deriving from <a href="https://github.com/getgrav/grav">Grav</a>).
+</p>
+</div>
+</p>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+        
+
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/clipboard.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/perfect-scrollbar.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/perfect-scrollbar.jquery.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/jquery.sticky.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/featherlight.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/highlight.pack.js?1643210525"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/modernizr.custom-3.6.0.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/learn.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/hugo-learn.js?1643210525"></script>
+    
+    
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </body>
+</html>
+

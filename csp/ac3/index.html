@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.87.0" />
+    <meta name="description" content="">
+<meta name="author" content="cagix">
+
+    <link rel="icon" href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/images/favicon.png" type="image/png">
+
+    <title>Kantenkonsistenz und AC-3   </title>
+
+    
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/nucleus.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/fontawesome-all.min.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/hybrid.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/featherlight.min.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/perfect-scrollbar.min.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/auto-complete.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/atom-one-dark-reasonable.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/theme.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/tabs.css?1643210524" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/hugo-theme.css?1643210524" rel="stylesheet">
+    
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/css/theme-green.css?1643210524" rel="stylesheet">
+    
+    
+
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/jquery-3.3.1.min.js?1643210524"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial !important;
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+</style>
+
+  </head>
+  <body class="" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/images/logo.png'>
+</a>
+
+    </div>
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/" title="Einführung KI" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/">
+          Einführung KI
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/" title="Intro: Was ist Künstliche Intelligenz?" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/intro-ai/">
+        Einführung KI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/" title="Problemlösen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/intro/problems/">
+        Problemlösen
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/" title="Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/">
+          Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/" title="Uninformierte Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/">
+          Uninformierte Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/" title="Suche mit Tiefensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/dfs/">
+        Tiefensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/" title="Suche mit Breitensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/uninformed/bfs/">
+        Breitensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/" title="Informierte Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/">
+          Informierte Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/" title="Suche mit Branch-and-Bound" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/branchandbound/">
+        Branch-and-Bound
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/" title="Suche mit Best First" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/bestfirst/">
+        Best First
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/" title="Suche mit A*" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/informed/astar/">
+        A*
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/" title="Lokale Suche" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/">
+          Lokale Suche
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/" title="Lokale Suche: Gradientensuche" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/gradient/">
+        Gradientensuche
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/" title="Lokale Suche: Simulated Annealing" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/search/local/annealing/">
+        Simulated Annealing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/" title="Genetische Algorithmen" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/">
+          Genetische Algorithmen
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/" title="Einführung Evolutionäre Algorithmen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/intro/">
+        Intro EA/GA
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/" title="Modellierung mit Genetischen Algorithmen" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ea/ga/">
+        Genetische Algorithmen
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/" title="Spiele" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/">
+          Spiele
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/" title="Einführung Optimale Spiele" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/intro/">
+        Optimale Spiele
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/" title="Minimax" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/minimax/">
+        Minimax
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/" title="Heuristiken" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/heuristics/">
+        Heuristiken
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/" title="Alpha-Beta-Pruning" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/games/alphabeta/">
+        Alpha-Beta-Pruning
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/" title="Constraintsolving" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/">
+          CSP
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/" title="Einführung Constraints" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/intro/">
+        Intro
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/" title="Lösen von diskreten CSP" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/backtrackingsearch/">
+        Lösen von diskreten CSP
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/" title="Heuristiken" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/heuristics/">
+        Heuristiken
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/" title="Kantenkonsistenz und AC-3" class="dd-item active">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/ac3/">
+        AC-3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/" title="Entscheidungsbäume" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/">
+          Entscheidungsbäume
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/" title="Machine Learning 101" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/mlbasics/">
+        Machine Learning 101
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/" title="CAL2" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal2/">
+        CAL2
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/" title="Pruning" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/pruning/">
+        Pruning
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/" title="CAL3" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/cal3/">
+        CAL3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/" title="Entropie" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/entropy/">
+        Entropie
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/" title="ID3 und C4.5" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/dtl/id3/">
+        ID3 und C4.5
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/" title="Naive Bayes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/">
+          Naive Bayes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/" title="Wiederholung Wahrscheinlichkeitstheorie" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/probability/">
+        Wahrscheinlichkeiten
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/" title="Klassifikation mit Naive Bayes" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/naivebayes/nb/">
+        Naive Bayes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/" title="NN: Einführung in Neuronale Netze" class="dd-item
+        
+        
+        
+        ">
+      <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/">
+          Neuronale Netze
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/" title="NN1 - Das Perzeptron" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml1_perceptron/">
+        NN1 - Perzeptron
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/" title="NN2 - Lineare Regression" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml2_linear_regression/">
+        NN2 - Lineare Regression
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/" title="NN3 - Logistische Regression" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml3_logistic_regression/">
+        NN3 - Logistische Regression
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/" title="NN4 - Overfitting und Regularisierung" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml4_overfitting/">
+        NN4 - Overfitting
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/" title="NN5 - Multilayer Perzeptron" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml5_mlp/">
+        NN5 - MLP
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/" title="NN6 - Backpropagation" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml6_backprop/">
+        NN6 - Backpropagation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/" title="NN7 - Training &amp; Testing" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml7_training_testing/">
+        NN7 - Training &amp; Testing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/" title="NN8 - Performanzanalyse" class="dd-item ">
+        <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/ml/ml8_testing/">
+        NN8 - Performanzanalyse
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/schedule"><i class='fas fa-bookmark'></i> Fahrplan</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments"><i class='fas fa-bookmark'></i> Praktikum</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/grading"><i class='fas fa-bookmark'></i> Note/Credits</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/syllabus"><i class='fas fa-bookmark'></i> Syllabus</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/resources"><i class='fas fa-bookmark'></i> Ressourcen</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/imprint'>Impressum</a>,
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/privacy'>Datenschutz</a>,
+    <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/misc/credits'>Credits</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/KI-Vorlesung/Lecture/edit/master/markdown/csp/ac3/index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/'>KI W21</a> > <a href='/elearning/data/FH-Bielefeld/lm_data/lm_1166002/csp/'>Constraintsolving</a> > Kantenkonsistenz und AC-3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#problem-bei-bt-suche">Problem bei BT-Suche</a></li>
+        <li><a href="#inference-vorab-prüfung-forward-checking">INFERENCE: Vorab-Prüfung (Forward Checking)</a></li>
+        <li><a href="#forward-checking-findet-nicht-alle-inkonsistenzen">Forward Checking findet nicht alle Inkonsistenzen!</a></li>
+        <li><a href="#übergang-von-forward-checking-zu-kantenkonsistenz">Übergang von Forward Checking zu Kantenkonsistenz</a></li>
+        <li><a href="#definition-kantenkonsistenz-arc-consistency">Definition Kantenkonsistenz (Arc Consistency)</a></li>
+        <li><a href="#beispiel-kantenkonsistenz">Beispiel Kantenkonsistenz</a></li>
+        <li><a href="#ac-3-algorithmus-herstellen-von-kantenkonsistenz">AC-3 Algorithmus: Herstellen von Kantenkonsistenz</a></li>
+        <li><a href="#einsatz-des-ac-3-algorithmus">Einsatz des AC-3 Algorithmus</a></li>
+        <li><a href="#wrap-up">Wrap-Up</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Kantenkonsistenz und AC-3
+            </h1>
+          
+
+        
+
+
+
+
+    
+
+
+
+
+
+<div class="tldr">
+    <h2>TL;DR</h2>
+
+    
+        <p>Bei der Backtracking-Suche werden schrittweise Variablen belegt. Dabei kann eine Belegung eine Lösung
+im weiteren Verlauf der Suche unmöglich machen, so dass (viel) Backtracking notwendig wird.</p>
+<p>Beim <strong>Forward Checking</strong> entfernt man nach der Belegung einer Variablen in allen Nachbarvariablen
+die durch die aktuelle Belegung inkonsistent gewordenen Werte. Wenn dabei ein Wertebereich leer wird,
+führt die aktuelle Belegung nicht zu einer Lösung und kann sofort zurückgenommen werden. Allerdings
+findet man mit Forward Checking nicht alle Inkonsistenzen.</p>
+<p>Bei der <strong>Kantenkonsistenz</strong> prüft man, ob zu jedem Wert aus dem Wertebereich einer Variablen in den
+Nachbarvariablen mindestens ein passender (konsistenter) Wert existiert. Dabei werden die Constraints
+nacheinander betrachtet (nicht gleichzeitig). Wenn dies nicht der Fall ist, wird der Wert aus dem
+Wertebereich der betrachteten Variablen entfernt. Der AC-3-Algorithmus erzeugt schrittweise Kantenkonsistenz
+für ein CSP.</p>
+<p>Man kann den AC-3 als Vorverarbeitung nutzen und die Wertemengen <em>vor</em> der BT-Suche reduzieren. Eventuell
+findet man dabei bereits eine Lösung oder kann eine Lösung ausschließen. Man kann den AC-3 auch als
+Inferenzschritt in die BT-Suche einbetten (&quot;MAC&quot;).</p>
+
+    
+
+    
+        <h3>Videos (YouTube)</h3>
+        
+
+<ul>
+
+    
+    
+
+    
+        
+        
+        <div class="embed-video-player">
+            <iframe class="youtube-player" src="https://www.youtube-nocookie.com/embed/TvF78iVDwKM" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    
+
+    
+    
+
+</ul>
+
+    
+
+    
+        <h3>Videos (FH-Medienportal)</h3>
+        
+
+<ul>
+
+    
+    
+        
+    
+
+    
+    
+    
+        
+    
+
+    
+        <li><a href="https://www.fh-bielefeld.de/medienportal/m/8fa264520ed3ce80f71936e084254d14c579ff19e2c724e914a6df761d12c3c7d22d62ebf625cc9181f29e288922785522e7cc60f9e7ce6cb369a3148b115ca7" target="_blank" rel="nofollow noopener noreferrer">Direktlink FH-Medienportal: KI CSP, AC-3</a></li>
+    
+
+</ul>
+
+    
+
+    
+</div>
+
+
+    
+
+
+<div class="outcomes">
+    <h2>Lernziele</h2>
+    
+        <h3>Verstehen (K2)</h3>
+<ul>
+<li>Forward Checking (<em>FC</em>)</li>
+<li>Erweiterung von <em>FC</em> auf alle Kanten: <em>Kantenkonsistenz</em></li>
+<li>Kantenkonsistenz bedeutet nicht globale Konsistenz</li>
+</ul>
+<h3>Anwenden (K3)</h3>
+<ul>
+<li>AC-3 Algorithmus</li>
+</ul>
+
+    
+</div>
+
+
+    <h2 id="problem-bei-bt-suche">Problem bei BT-Suche</h2>
+<p>Zuweisung eines Wertes an Variable <span>$X$</span>:</p>
+<ul>
+<li>Passt zu aktueller Belegung</li>
+<li>Berücksichtigt aber nicht <strong>restliche</strong> Constraints
+=&gt; macht weitere Suche u.U. unmöglich/schwerer</li>
+</ul>
+<p><strong>Lösung</strong>: Nach Zuweisung alle <em>nicht zugewiesenen Nachbarvariablen</em> prüfen</p>
+<h2 id="inference-vorab-prüfung-forward-checking">INFERENCE: Vorab-Prüfung (Forward Checking)</h2>
+<div class='center'>
+<div class="center" style="width:65%;height:auto;"><figure><img src="images/bt_search_inference.png" alt=""><figcaption><h4></h4></figcaption></figure></div>
+</div>
+<p><span class='alert'><strong>Inference</strong></span>: Frühzeitiges Erkennen von Fehlschlägen! (vgl. <a href="#id_Russell2020">[Russell2020, S. 178]</a>)</p>
+<p>Nach Zuweisung eines Wertes an Variable <span>$X$</span>:</p>
+<ul>
+<li>Betrachte alle nicht zugewiesenen Variablen <span>$Y$</span>:
+<ul>
+<li>Falls Constraints zw. <span>$X$</span> und <span>$Y$</span>, dann ...</li>
+<li>... entferne alle inkonsistenten Werte aus dem Wertebereich von <span>$Y$</span>.</li>
+</ul>
+</li>
+</ul>
+<p><a class="btn btn-default btn-crossreference" >
+Tafelbeispiel: Forward Checking (A=red, D=green)
+</a></p>
+<p>Beispiel:</p>
+<ol>
+<li>Sei A auf rot gesetzt =&gt; entferne rot in B und C</li>
+<li>Sei D auf grün gesetzt =&gt; entferne grün in B und C und E</li>
+</ol>
+<p>Problem: Für B und C bleibt nur noch blau; sind aber benachbart!</p>
+<h2 id="forward-checking-findet-nicht-alle-inkonsistenzen">Forward Checking findet nicht alle Inkonsistenzen!</h2>
+<div class='center'>
+<div class="center" style="width:55%;height:auto;"><figure><img src="images/forward_checking.png" alt=""><figcaption><h4></h4></figcaption></figure></div>
+</div>
+<ul>
+<li>Nach <span>$\lbrace A=red, D=green \rbrace$</span> bleibt für B und C nur noch blue</li>
+<li>B und C sind aber benachbart</li>
+</ul>
+<h2 id="übergang-von-forward-checking-zu-kantenkonsistenz">Übergang von Forward Checking zu Kantenkonsistenz</h2>
+<ul>
+<li>
+<p>Forward Checking erzeugt Konsistenz für alle Constraints der
+<strong>gerade betrachteten (belegten) Variablen</strong>.</p>
+</li>
+<li>
+<p>Idee: Ausdehnen auf alle Kanten ... =&gt; Einschränken der Wertemengen</p>
+</li>
+</ul>
+<h2 id="definition-kantenkonsistenz-arc-consistency">Definition Kantenkonsistenz (Arc Consistency)</h2>
+<blockquote>
+<p>Eine Kante von <span>$X$</span> nach <span>$Y$</span> ist &quot;<span class='alert'>konsistent</span>&quot;, wenn für jeden Wert
+<span>$x \in D_X$</span> und für alle Constraints zwischen <span>$X$</span> und <span>$Y$</span> jeweils ein Wert
+<span>$y \in D_Y$</span> existiert, so dass der betrachtete Constraint durch <span>$(x,y)$</span>
+erfüllt ist.</p>
+</blockquote>
+<p>Ein CSP ist kanten-konsistent, wenn für alle Kanten des CSP Konsistenz herrscht.</p>
+<h2 id="beispiel-kantenkonsistenz">Beispiel Kantenkonsistenz</h2>
+<p><span>$V = \lbrace a,b,c,d,e \rbrace$</span></p>
+<p><span>$\mathrm{C} = \lbrace ((a,b), \ne), ((b,c), \ne), ((a,c), \ne), ((c,d), =), ((b,e), &lt;) \rbrace$</span></p>
+<p><span>$D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$</span>, <span>$D_d=\lbrace 1,2 \rbrace$</span>, <span>$D_e=\lbrace 1,2,3 \rbrace$</span></p>
+<p><a class="btn btn-default btn-crossreference" >
+Tafelbeispiel Kantenkonsistenz
+</a></p>
+<p>Einschränkung der Ausgangswertemengen (kanten-konsistent)</p>
+<p><span>$D_a=\lbrace 1,2,3 \rbrace$</span>, <span>$D_b=\lbrace 1,2 \rbrace$</span>, <span>$D_c=\lbrace 1,2 \rbrace$</span>, <span>$D_d=\lbrace 1,2 \rbrace$</span>, <span>$D_e=\lbrace 2,3 \rbrace$</span></p>
+<div class='cbox'>
+<p>=&gt; Kantenkonsistenz ist nur <strong>lokale</strong> Konsistenz!</p>
+</div>
+<p><em>Anmerkung</em>: <span>$((a,b), \ne)$</span> ist Kurzform für
+<span>$\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$</span></p>
+<h2 id="ac-3-algorithmus-herstellen-von-kantenkonsistenz">AC-3 Algorithmus: Herstellen von Kantenkonsistenz</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">AC3</span>(csp):
+    queue <span style="color:#f92672">=</span> Queue(csp<span style="color:#f92672">.</span>arcs)
+    <span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> queue<span style="color:#f92672">.</span>isEmpty():
+        (x,y) <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span>dequeue()
+        <span style="color:#66d9ef">if</span> ARC_Reduce(csp,x,y):
+            <span style="color:#66d9ef">if</span> D_x<span style="color:#f92672">.</span>isEmpty(): <span style="color:#66d9ef">return</span> false
+            <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> x<span style="color:#f92672">.</span>neighbors(): queue<span style="color:#f92672">.</span>enqueue(z,x)
+    <span style="color:#66d9ef">return</span> true
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ARC_Reduce</span>(csp, x, y):
+    change <span style="color:#f92672">=</span> false
+    <span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> D_x:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> (any w <span style="color:#f92672">in</span> D_y <span style="color:#f92672">and</span> csp<span style="color:#f92672">.</span>C_xy(v,w)):
+            D_x<span style="color:#f92672">.</span>remove(v);  change <span style="color:#f92672">=</span> true
+    <span style="color:#66d9ef">return</span> change
+</code></pre></div><p><span class='origin'>Quelle: Eigener Code basierend auf einer Idee nach <a href="#id_Russell2020">[Russell2020, S. 171, Fig. 5.3]</a></span></p>
+<p><em>Anmerkung</em>: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten: Jedes Element
+kann nur genau einmal in einer Menge enthalten sein. D.h. wenn man bei <code>queue.enqueue(z,x)</code> die
+Rückkanten von den Nachbarn in die Queue aufnimmt, sorgt die Queue eigenständig dafür, dass es
+keine doppelten Vorkommen einer Kante in der Queue gibt. (Falls die verwendete Queue in einer
+Programmiersprache das nicht unterstützt, müsste man bei <code>queue.enqueue(z,x)</code> stets abfragen, ob
+die Kante <code>(z,x)</code> bereits in der Queue ist und diese dann nicht erneut hinzufügen.)
+AC-3 hat eine Laufzeit von <span>$O(d^3n^2)$</span> (<span>$n$</span> Knoten, maximal <span>$d$</span> Elemente pro Domäne). Leider findet
+auch AC-3 nicht alle Inkonsistenzen ... (NP-hartes Problem).</p>
+<p><em>Hinweis</em>: In gewisser Weise kann man Forward Checking als ersten Schritt bei der
+Herstellung von Kantenkonsistenz interpretieren.</p>
+<h2 id="einsatz-des-ac-3-algorithmus">Einsatz des AC-3 Algorithmus</h2>
+<ol>
+<li>
+<p>Vorverarbeitung: Reduktion der Wertemengen <em>vor</em> BT-Suche</p>
+<ul>
+<li>Nach AC-3 evtl. bereits Lösung gefunden (oder ausgeschlossen)</li>
+</ul>
+</li>
+<li>
+<p>Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche
+(<strong>MAC</strong> -- Maintaining Arc Consistency)</p>
+<ul>
+<li>Nach jeder Zuweisung an <span>$X_i$</span> Aufruf von AC-3-Variante:
+<ul>
+<li>Initial nur Kanten von <span>$X_i$</span> zu allen noch nicht zugewiesenen Nachbarvariablen</li>
+</ul>
+</li>
+<li>Anschließend rekursiver Aufruf von BT-Suche</li>
+</ul>
+</li>
+</ol>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Anwendung von Forward Checking und ...</li>
+<li>... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz</li>
+</ul>
+
+    
+
+
+<div class="quizzes">
+    <h2>Quizzes ...</h2>
+    <ul>
+    
+        
+        
+        
+        <li>
+            <a href="https://kahoot.it/challenge/0862548?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765265778" class="icon reading" target="_blank" rel="nofollow noopener noreferrer"><strong>Selbsttest CSP, AC-3 (Kahoot)</strong></a>
+        </li>
+        
+    
+    </ul>
+</div>
+
+
+    
+
+
+
+<div class="assignments">
+    <h2>Übungsblätter</h2>
+
+    <ul>
+    
+        
+        
+        <li>
+            <a href="https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002/assignments/sheet04/"><strong>Blatt 04: Constraints</strong></a>
+            
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                         (Abgabe: 03.11.2021)
+                    
+                
+            
+                
+                    
+                
+            
+                
+            
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+            
+                
+            
+                
+                    
+                
+            
+                
+            
+        </li>
+        
+    
+    </ul>
+
+</div>
+
+
+    
+
+
+
+<div class="bib">
+    <h2>Literatur</h2>
+    <ul>
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Bartak2001">
+            
+                [Bartak2001] <strong>Theory and practice of constraint propagation</strong>
+            
+            
+                <br>Barták, R., 2001.
+                
+                
+            
+            
+            </li>
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Kumar1992">
+            
+                [Kumar1992] <strong>Algorithms for constraint satisfaction problems: A survey</strong>
+            
+            
+                <br>Kumar, V., 1992.
+                
+                
+            
+            
+            </li>
+        
+    
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            <li id="id_Russell2020">
+            
+                [Russell2020] <a href="http://aima.cs.berkeley.edu" class="icon reading" target="_blank" rel="nofollow noopener noreferrer"><strong>Artificial intelligence: A modern approach</strong></a>
+            
+            
+                <br>Russell, S. und Norvig, P., Pearson, 2020.
+                
+                    ISBN <a href="https://www.digibib.net/openurl/Bi10?isbn=978-0134610993" target="_blank" rel="nofollow noopener noreferrer">978-0134610993</a>.
+                
+                
+            
+            
+                <br><em>CSP, AC-3: Abschnitt 5.2</em>
+            
+            </li>
+        
+    
+    </ul>
+</div>
+
+
+
+
+
+        
+        </div>
+        <p><div style="color: darkgray; font-size: smaller;">
+<p>
+    <!-- https://creativecommons.org/choose/ -->
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> Unless otherwise noted, <a href="https://github.com/KI-Vorlesung/Lecture">this work</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/KI-Vorlesung/Lecture/graphs/contributors">contributors</a> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+<br />
+    Icons by <a href="https://fontawesome.com/">Font Awesome</a>.
+    Built with <a href="https://github.com/jgm/pandoc">Pandoc</a> using <a href="https://github.com/cagix/pandoc-lecture">Pandoc-Lecture</a> and <a href="https://github.com/gohugoio/hugo">Hugo</a> using the <a href="https://github.com/matcornic/hugo-theme-learn">Hugo Learn Theme</a> (deriving from <a href="https://github.com/getgrav/grav">Grav</a>).
+</p>
+</div>
+</p>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+        
+
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/clipboard.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/perfect-scrollbar.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/perfect-scrollbar.jquery.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/jquery.sticky.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/featherlight.min.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/highlight.pack.js?1643210525"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/modernizr.custom-3.6.0.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/learn.js?1643210525"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1166002/js/hugo-learn.js?1643210525"></script>
+    
+    
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </body>
+</html>
+
