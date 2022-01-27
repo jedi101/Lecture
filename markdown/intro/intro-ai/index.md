@@ -76,7 +76,7 @@ Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an
 Zu den kognitiven Fähigkeiten und damit zur Intelligenz zählen also eine Reihe von
 Fähigkeiten, die man Menschen im allgemeinen zuschreibt. Lernen und Problemlösen
 und Planen sind Dinge, die vermutlich jeder direkt mit dem Begriff Intelligenz
-verbindet. Interessanterweise gehören auf auch Aufmerksamkeit und Wahrnehmung und
+verbindet. Interessanterweise gehören auch Aufmerksamkeit und Wahrnehmung und
 Orientierung mit dazu -- Fähigkeiten, die beispielsweise in der Robotik sehr
 wichtig sind. Kreativität und Vorstellung zählen aber auch mit in den Bereich der
 kognitiven Fähigkeiten und damit zum Begriff Intelligenz. In der KI werden diese
