@@ -133,7 +133,7 @@ zu lernen :-)
 ::: notes
 *Anmerkung*: Denken Sie an die Analogie von oben. $x_1$ kann als
 Konstruktor einer Klasse `x1` betrachtet werden, die eine Unterklasse
-von `Baum` ist. Durch den Aufruf des Konstruktors wird als ein `Baum`
+von `Baum` ist. Durch den Aufruf des Konstruktors wird also ein `Baum`
 erzeugt.
 
 Es gibt in $x_1$ zwei mögliche Ausprägungen, d.h. der Baum hat in
