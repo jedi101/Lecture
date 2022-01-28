@@ -16,7 +16,7 @@ Klasse.
 
 Den Baum kann man mit dem Algorithmus CAL2 schrittweise aufbauen. Man startet mit "Nichtwissen" (symbolisiert
 mit einem "\*") und iteriert durch alle Trainingsbeispiele, bis der Baum sich nicht mehr verändert. Wenn
-der Baum auf ein Beispiel einen "\*" ausgibt, dann ersetzt man diesen "\*" mit der Klasse des eben betrachteten
+der Baum zum Beispiel einen "\*" ausgibt, dann ersetzt man diesen "\*" mit der Klasse des eben betrachteten
 Beispiels. Wenn der Baum bei einem Beispiel die passende Klasse ausgibt, macht man mit dem nächsten Beispiel
 weiter. Wenn der Baum bei einem Beispiel eine andere Klasse ausgibt, muss das Klassensymbol im Baum (an
 der Stelle, wo das Objekt gelandet ist) durch den nächsten Test ersetzt werden: Hierzu nimmt man das nächste,
